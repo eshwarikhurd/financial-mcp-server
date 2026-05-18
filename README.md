@@ -16,20 +16,20 @@ An MCP (Model Context Protocol) server that gives Claude real-time financial int
 ### 📊 Get Company Financials
 > "Get me the financials for AAPL"
 
-![Financials 1](outputs/financials_1.png)
-![Financials 2](outputs/financials_2.png)
+![Financials 1](outputs/financials-1.png)
+![Financials 2](outputs/financials-2.png)
 
 ### 🔍 Compare Peers
 > "Compare AAPL with MSFT and GOOGL"
 
-![Peers 1](outputs/peers_1.png)
-![Peers 2](outputs/peers_2.png)
+![Peers 1](outputs/comparisons.png)
+![Peers 2](outputs/comparisons-2.png)
 
 ### 📄 Summarize 10-K
 > "Summarize the 10-K for AAPL"
 
-![Summarize 1](outputs/summarize_1.png)
-![Summarize 2](outputs/summarize_2.png)
+![Summarize 1](outputs/summary-1.png)
+![Summarize 2](outputs/summary-2.png)
 
 > "Summarize the 10-K for MSFT"
 
