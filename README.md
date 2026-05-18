@@ -10,11 +10,26 @@ An MCP (Model Context Protocol) server that gives Claude real-time financial int
 | `compare_peers` | Side-by-side financial comparison of a company vs its peers |
 | `summarize_10k` | Fetches latest 10-K from SEC EDGAR and summarizes it with source citations using Claude |
 
+
 ## Demo
 
+### 📊 Get Company Financials
+> "Get me the financials for AAPL"
+
+![Financials 1](outputs/financials_1.png)
+![Financials 2](outputs/financials_2.png)
+
+### 🔍 Compare Peers
 > "Compare AAPL with MSFT and GOOGL"
 
-Claude automatically calls `compare_peers("AAPL", ["MSFT", "GOOGL"])` and returns a structured comparison table with live data.
+![Peers 1](outputs/peers_1.png)
+![Peers 2](outputs/peers_2.png)
+
+### 📄 Summarize 10-K
+> "Summarize the 10-K for AAPL"
+
+![Summarize 1](outputs/summarize_1.png)
+![Summarize 2](outputs/summarize_2.png)
 
 > "Summarize the 10-K for MSFT"
 
