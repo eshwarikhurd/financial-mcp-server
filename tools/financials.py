@@ -23,6 +23,11 @@ async def get_company_financials(ticker: str) -> dict:
         if not income_data or not profile_data:
             return {"error": f"No data found for ticker {ticker}"}
 
+        if not isinstance(income_data, list) or len(income_data) == 0:
+            return {"error": f"No income data found for {ticker}"}
+        if not isinstance(profile_data, list) or len(profile_data) == 0:
+            return {"error": f"No profile data found for {ticker}"}
+
         income = income_data[0]
         profile = profile_data[0]
 
