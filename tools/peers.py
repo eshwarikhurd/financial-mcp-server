@@ -1,7 +1,9 @@
 import httpx
 import os
+import asyncio
 from dotenv import load_dotenv
 from tools.financials import get_company_financials
+
 
 load_dotenv()
 
@@ -13,9 +15,11 @@ async def compare_peers(ticker: str, peers: list[str]) -> dict:
     all_tickers = [ticker] + peers
     results = []
 
-    for t in all_tickers:
-        data = await get_company_financials(t)
-        results.append(data)
+
+    results = await asyncio.gather(
+        *[get_company_financials(t) for t in all_tickers]
+    )
+    results = list(results)
 
     # Build comparison table
     comparison = {
